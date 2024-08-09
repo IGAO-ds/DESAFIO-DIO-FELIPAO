@@ -3,6 +3,24 @@ let HEROI = {
     xp: 2000,
     rank: "indeterminado"
 }
+const Ranked = {
+    loss: true,
+    win: true,
+    lossPoints: 750,
+    winPoints: 500
+
+}
+
+
+
+
+if(Ranked.loss === true){
+    HEROI.xp -= Ranked.lossPoints
+    
+}else if(Ranked.win === true){
+    HEROI.xp += Ranked.winPoints
+}
+
 
 
 switch(true){
