@@ -15,9 +15,11 @@ const Ranked = {
 
 
 if(Ranked.loss === true){
-    HEROI.xp -= Ranked.lossPoints
+    HEROI.xp -= Ranked.lossPoints ,
     
-}else if(Ranked.win === true){
+}
+
+else if(Ranked.win === true){
     HEROI.xp += Ranked.winPoints
 }
 
